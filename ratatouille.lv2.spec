@@ -11,6 +11,7 @@ Url:		https://github.com/ratatouille.lv2/ratatouille.lv2
 Source0:	https://github.com/ratatouille.lv2/ratatouille.lv2/archive/%{version}/%{oname}-v%{version}-src.tar.xz
 Patch0:		ratatouille-0.9.10-fix-installation-path.patch
 BuildRequires:		cmake
+BuildRequires:		pkgconfig(alsa)
 BuildRequires:		pkgconfig(cairo)
 BuildRequires:		pkgconfig(jack)
 BuildRequires:		pkgconfig(lv2)
