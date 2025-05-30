@@ -1,0 +1,25 @@
+diff -rupN Ratatouille.lv2-v0.9.10.old/Ratatouille/makefile Ratatouille.lv2-v0.9.10/Ratatouille/makefile
+--- Ratatouille.lv2-v0.9.10.old/Ratatouille/makefile	2025-03-17 07:46:26.000000000 +0100
++++ Ratatouille.lv2-v0.9.10/Ratatouille/makefile	2025-05-29 05:42:51.145052695 +0200
+@@ -6,14 +6,14 @@
+ 	# check which architecture we build for
+ 	TARGET_ARCH = UNKNOWN
+ 	# check if user is root
+-	user = $(shell whoami)
+-	ifeq ($(user),root)
+-	INSTALL_DIR = /usr/lib/lv2
++	#user = $(shell whoami)
++	#ifeq ($(user),root)
++	INSTALL_DIR = /usr/lib64/lv2
+ 	EXE_INSTALL_DIR = /usr/bin
+-	else 
+-	INSTALL_DIR = ~/.lv2
+-	EXE_INSTALL_DIR = ~/bin
+-	endif
++	#else 
++	#INSTALL_DIR = ~/.lv2
++	#EXE_INSTALL_DIR = ~/bin
++	#endif
+ 
+ 
+ 	# check which architecture we build for
